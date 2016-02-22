@@ -1,3 +1,5 @@
+
+
 import praw
 import pprint
 user_agent =('PyRed 3.5.1')
@@ -9,7 +11,6 @@ user = r.get_redditor(user_name)
 
 
 while True:
-	x = input("Is this the correct username: ")
 	if x == 'Yes' or x == 'YES' or x == 'yes':
 		user = r.get_redditor(user_name)
 		gen = user.get_submitted(limit = thing_limit)
@@ -19,6 +20,12 @@ while True:
 			karma[subreddit] = (karma.get(subreddit, 0) + thing.score)
 
 		pprint.pprint(karma)
-	else:
+	elif:
 		user_name = input("Please enter the correct username! ")
-
+		x = input("Is this the correct username: ")
+	else:
+		a = input("Would you like to continue? ")
+		if a == 'yes' or a == 'Yes':
+			pass
+		else:
+			break
