@@ -1,7 +1,6 @@
-
-
 import praw
 import pprint
+
 user_agent =('PyRed 3.5.1')
 r = praw.Reddit(user_agent = user_agent)
 
